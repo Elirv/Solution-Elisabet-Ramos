@@ -1,11 +1,22 @@
 <?php
-  $a = array ('a' => 10, 'b' => 12, 'c' => 13);
-  $keys = array_keys($a);
+echo date_default_timezone_get();
+echo time();
 
-  shuffle($a);
-  var_dump($a); //Devolverá un array con los índices y valores mezclados de forma aleatoria
+echo "<br>";
+echo date("y-m-j"); #fecha en formato y-m-d
+echo "<br>";
+echo date("Y-M-D"); #cualquier formato de fecha
+echo "<br>";
+echo "la fecha actual es " . date("d") . " del " . date("m") . " de " . date("Y");
 
-  foreach ($keys as $key) {
-    echo $key . " - " . $a[$key]; //Devolverá una lista con valores mezclados de forma aleatoria y sus índices originales 
-  }
+echo "<br>";
+echo date("D"); #día actual
+echo "<br>";
+echo date("m"); #mes de forma numérica
+echo "<br>";
+echo date("s-i"); # minutos con ceros a la izq.
+echo "<br>";
+echo "00:" . date("i");
+
+
 ?>
