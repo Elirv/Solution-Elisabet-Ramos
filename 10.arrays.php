@@ -25,19 +25,46 @@ var_dump($thingsRooms);
 echo "<br>";
 
 #array función con la longitud
+function leng(){
 $arrayLength = array(2, "one", 7, 20);#cuatro de longitud
 echo count($arrayLength);
+}
+leng ();
 echo "<br>";
 
 #función que combine dos arrays
-echo "hello";
+function merge(){
+    $array1    = array(1, 2, 3, 4);
+    $array2    = array(5, 6, 7);
+    $result = array_merge($array1, $array2);
+print_r($result);
+}
+merge ();
 echo "<br>";
 
 #función que devuelve el último elemento del array
-echo "hello";
+function lastKey(){
+    $array1    = array(1, 2, 3, 'This');#usando end()
+    $result = end($array1);
+echo($result);
+}
+lastKey();
+echo "<br>";
+function lastKey1(){
+    $array   = array(1, 2, 3, 'This one');#usando array_pop()
+    $result = array_pop($array);
+echo($result);
+}
+lastKey1();
 echo "<br>";
 
 #función que añade un elemento al array
-echo "hello";
+function addKey(){
+    $firstArray = array(1, 2, 3, 4);
+    array_push($firstArray, "this", "this too");
+print_r($firstArray);
+}
+addKey ();
 echo "<br>";
+
 ?>
