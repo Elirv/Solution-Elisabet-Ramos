@@ -26,7 +26,7 @@ echo "<br>";
 
 #función de numeros y operador
 function operaciones($num1, $num2, $operator) {
-    $result = 0;
+    
     if($operator == "add") {
     $result = $num1 + $num2;
     }else if($operator == "multiply") {
@@ -36,6 +36,6 @@ function operaciones($num1, $num2, $operator) {
     }
     return $result;
 }
-echo operaciones(10, 8, "multiply");
+echo operaciones(10, 8, "add");
 
 ?>

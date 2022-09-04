@@ -46,8 +46,11 @@ echo "<br>";
 
 #funcion primera aparición de un texto
 function number(){
-    $ejem = "";
-    echo $ejem;
+    $findme    = 'a';
+    $mystring1 = 'xyz';
+    $mystring2 = 'ABC';
+    $pos1 = stripos($mystring1, $findme);
+    echo $pos1;
 }
 number();
 echo "<br>";
