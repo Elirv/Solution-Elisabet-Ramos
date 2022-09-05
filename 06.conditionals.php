@@ -1,4 +1,5 @@
 <?php
+
 #dia actual
 $day = date("D");
 
@@ -31,18 +32,26 @@ echo "<br>";
 #Switch
 // $week = ['L', 'M', 'X', 'J', 'V', 'W'];
 $dayWeek = date("D");
+var_dump($dayWeek);
+echo "<br>";
+
 switch ($dayWeek){
-    case 1: echo "Monday";
+    case "Mon": 
+        echo "Monday";
     break;
-    case 2: echo "Martes";
+    case "Tue": 
+        echo "Tuesday";
     break; 
-    case 3: echo "Miércoles";
+    case "Wed": 
+        echo "Wednesday";
     break; 
-    case 4: echo "Jueves";
+    case "Thu": 
+        echo "Thursday";
     break; 
-    case 5: echo "Friday";
+    case "Fri":
+        echo "Friday";
     break;
     default: echo "Weekend!";
-  }
+}
 
 ?>
